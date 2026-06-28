@@ -3,7 +3,7 @@
 **Austin Domer, Hanan Ali, Peyton Hansen**
 
 ## Overview
-An end-to-end machine learning project analyzing 70,000+ Olympic athlete records to determine which physical and demographic attributes (age, height, weight, sex) predict medal outcomes. The project covers exploratory data analysis, feature selection, class imbalance handling, and comparison of three classification models — including a deliberate before/after analysis of how addressing class imbalance changes model performance.
+An end-to-end machine learning project analyzing 70,000+ Olympic athlete records to determine which physical and demographic attributes (age, height, weight, sex) predict medal outcomes. The project covers exploratory data analysis, feature selection, class imbalance handling, and comparison of three classification models including a deliberate before/after analysis of how addressing class imbalance changes model performance.
 
 ## Research Question
 Can an athlete's physical attributes alone predict whether they will win an Olympic medal?
@@ -74,13 +74,13 @@ Applied `class_weight='balanced'` to Logistic Regression and Decision Tree, and 
 | Decision Tree | 63.25% | 0.62 | 0.22 | 0.33 |
 | Naive Bayes | 40.95% | **0.88** | 0.18 | 0.30 |
 
-**Key tradeoff:** correcting for class imbalance significantly lowered overall accuracy but raised medal recall from 0.00 to as high as 0.88. For this problem, recall on the minority class is the more meaningful metric — a model that never predicts a medal is useless even at 86% accuracy.
+**Key tradeoff:** correcting for class imbalance significantly lowered overall accuracy but raised medal recall from 0.00 to as high as 0.88. For this problem, recall on the minority class is the more meaningful metric. A model that never predicts a medal is useless even at 86% accuracy.
 
 ## Planned Improvements
-- [ ] Re-introduce Sport and Country/NOC as encoded features — likely the strongest predictors, set aside in this version to keep the research question focused on physical attributes alone
+- [ ] Re-introduce Sport and Country/NOC as encoded features: likely the strongest predictors, set aside in this version to keep the research question focused on physical attributes alone
 - [ ] Add Random Forest and XGBoost for comparison
 - [ ] Tune classification threshold to balance precision/recall depending on use case
-- [ ] Build historical trend visualizations — medal counts by country over decades, sport parity analysis
+- [ ] Build historical trend visualizations, medal counts by country over decades, sport parity analysis
 
 ## Requirements
 
@@ -96,8 +96,8 @@ seaborn
 
 imbalanced-learn```
 
-Install: 
+## Install: 
 ```pip install -r requirements.txt```
 
 ## Key Insight
-Physical attributes alone are weak predictors of Olympic medals, and the project's most important finding isn't a model — it's a methodological one: ~86% accuracy looked strong but was reporting zero correct medal predictions. Correcting for class imbalance traded accuracy for actual predictive signal on the class that matters, surfacing the real limitation of the feature set rather than masking it. The next step — adding sport and country context — is a deliberate scope decision, not an oversight.
+Physical attributes alone are weak predictors of Olympic medals, and the project's most important finding isn't a model, it's a methodological one: ~86% accuracy looked strong but was reporting zero correct medal predictions. Correcting for class imbalance traded accuracy for actual predictive signal on the class that matters, surfacing the real limitation of the feature set rather than masking it. The next step is adding sport and country context which is a deliberate scope decision, not an oversight.
