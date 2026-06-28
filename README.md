@@ -18,7 +18,7 @@ An end-to-end machine learning project analyzing 70,000+ Olympic athlete records
 - **Source:** [Olympic Athletes and Results — Kaggle](https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results)
 - **Size:** 70,000+ athlete records spanning 120 years of Olympic history (1896–2016)
 - **Features used:** Age, Height, Weight
-- **Target:** Medal (binary — medaled vs. did not medal)
+- **Target:** Medal (binary: medaled vs. did not medal)
 
 ---
 
