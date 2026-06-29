@@ -15,7 +15,6 @@ Can an athlete's physical attributes alone predict whether they will win an Olym
 - **Target:** Medal (binary: medaled vs. did not medal)
 
 ## Project Structure
-
 ```
 going-for-gold/
 
@@ -102,7 +101,9 @@ imbalanced-learn
 ```
 
 ## Install: 
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 ## Key Insight
 Physical attributes alone are weak predictors of Olympic medals, and the project's most important finding isn't a model, it's a methodological one: ~86% accuracy looked strong but was reporting zero correct medal predictions. Correcting for class imbalance traded accuracy for actual predictive signal on the class that matters, surfacing the real limitation of the feature set rather than masking it. The next step is adding sport and country context which is a deliberate scope decision, not an oversight.
