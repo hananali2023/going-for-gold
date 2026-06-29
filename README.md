@@ -15,7 +15,9 @@ Can an athlete's physical attributes alone predict whether they will win an Olym
 - **Target:** Medal (binary: medaled vs. did not medal)
 
 ## Project Structure
-```going-for-gold/
+
+```
+going-for-gold/
 
 ├── notebook/
 
@@ -27,7 +29,8 @@ Can an athlete's physical attributes alone predict whether they will win an Olym
 
 ├── requirements.txt
 
-└── README.md```
+└── README.md
+```
 
 
 ## Pipeline
@@ -84,7 +87,8 @@ Applied `class_weight='balanced'` to Logistic Regression and Decision Tree, and 
 
 ## Requirements
 
-``` pandas
+```
+pandas
 
 numpy
 
@@ -94,7 +98,8 @@ matplotlib
 
 seaborn
 
-imbalanced-learn```
+imbalanced-learn
+```
 
 ## Install: 
 ```pip install -r requirements.txt```
