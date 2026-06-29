@@ -27,7 +27,7 @@ Can an athlete's physical attributes alone predict whether they will win an Olym
 
 ├── requirements.txt
 
-└── README.md ```
+└── README.md```
 
 
 ## Pipeline
